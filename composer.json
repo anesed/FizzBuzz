@@ -1,0 +1,11 @@
+{
+    "name": "anesed/FizzBuzz",
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "anesed\\fizzbuzz\\": "src/"
+	}
+    }
+}

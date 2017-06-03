@@ -1,14 +1,8 @@
 #!/usr/bin/env php
 <?php
+require_once(__DIR__."/../vendor/autoload.php");
+$fizzBuzzConverter = new \anesed\fizzbuzz\FizzBuzzNumberConverter();
 for ($i = 1; $i <= 100; $i++) {
-    if ($i % 5 == 0 && $i % 3 == 0) {
-        echo "Linianos";
-    } else if ($i % 5 == 0) {
-        echo "IT";
-    } else if ($i % 3 == 0) {
-        echo "Linio";
-    } else {
-        echo $i;
-    }
+    echo $fizzBuzzConverter->convert($i);
     echo PHP_EOL;
 }    
