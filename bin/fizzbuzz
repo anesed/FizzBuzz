@@ -1,8 +1,10 @@
 #!/usr/bin/env php
 <?php
 require_once(__DIR__."/../vendor/autoload.php");
-$fizzBuzzConverter = new \anesed\fizzbuzz\FizzBuzzNumberConverter();
+use \anesed\fizzbuzz\FizzBuzzNumberConverter;
+
+$fizzBuzzConverter = new FizzBuzzNumberConverter("Linio", "IT", "Linianos");
 for ($i = 1; $i <= 100; $i++) {
     echo $fizzBuzzConverter->convert($i);
     echo PHP_EOL;
-}    
+}
